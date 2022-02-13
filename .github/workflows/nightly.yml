@@ -97,3 +97,8 @@ jobs:
         asset_name: Emu68-tools-$$.zip # name to upload the release as, use $$ to insert date (YYYYMMDD) and 6 letter commit hash
         asset_content_type: application/zip # required by GitHub API
         max_releases: 7 # optional, if there are more releases than this matching the asset_name, the oldest ones are going to be deleted
+    - name: Webhook
+      uses: distributhor/workflow-webhook@v2
+      env:
+        webhook_url: "${{ secrets.DISCORD_WEBHOOK }}"
+        data: '{ "repository": "${{github.event.repository.full_name}}", "number": "${{github.event.number}}", "created_at": "${{github.event.pull_request.created_at}}", "updated_at": "${{github.event.pull_request.updated_at}}" }'
