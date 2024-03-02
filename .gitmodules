@@ -1,3 +1,6 @@
 [submodule "Emu68Contribs"]
 	path = Emu68Contribs
 	url = https://github.com/flype44/Emu68Contribs
+[submodule "cmake/common"]
+	path = cmake/common
+	url = ../../AmigaPorts/cmake-amiga-common-library
