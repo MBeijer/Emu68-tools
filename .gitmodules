@@ -12,7 +12,7 @@
 	url = https://github.com/michalsc/EmuControl.git
 [submodule "devicetree.resource"]
 	path = devicetree.resource
-	url = https://github.com/michalsc/devicetree.resource.git
+	url = https://github.com/mbeijer/devicetree.resource.git
 [submodule "mailbox.resource"]
 	path = mailbox.resource
 	url = https://github.com/michalsc/mailbox.resource.git
@@ -29,3 +29,12 @@
 	path = gic400.library
 	url = https://github.com/michalsc/gic400.library.git
 	branch = origin/emu68rom
+[submodule "rondoval/xhci"]
+	path = rondoval/xhci
+	url = https://github.com/rondoval/emu68-xhci-driver
+[submodule "rondoval/poseidon"]
+	path = rondoval/poseidon
+	url = https://github.com/rondoval/poseidon-backport
+[submodule "graphics.library"]
+	path = graphics.library
+	url = https://github.com/MBeijer/graphics.library.git
